@@ -56,7 +56,7 @@ public class Bootcamp {
         this.conteudos = conteudos;
     }
 
-    @Override
+   
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Bootcamp bootcamp = (Bootcamp) o;
@@ -68,7 +68,7 @@ public class Bootcamp {
                 && Objects.equals(conteudos, bootcamp.conteudos); // <- corrigido
     }
 
-    @Override
+   
     public int hashCode() {
         return Objects.hash(nome, descricao, dataInicial, dataFinal, devsInscritos, conteudos); // <- corrigido
     }
